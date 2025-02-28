@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Daisy UI and tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+     <style>
+        *{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+     </style>
+        
+    <title>Dev Board</title>
+</head>
+<body class="bg-[#F4F7FF]">
+    <!-- Header Area-->
+    <header class="py-5">
+        <nav class="w-[90%] mx-auto flex justify-between bg-base-100 py-3 px-4 rounded-xl">
+            <div class="logo flex gap-2 items-center">
+                <img class="w-9 h-9" src="./assets/logo.png" alt="Dev Logo">
+                <h2>Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <div class="nav-right-items flex gap-4">
+                <div class="nav-checkbox flex gap-2 items-center bg-[#F4F7FF] py-2 px-4 rounded-full">
+                    <img class="w-4 h-4" src="./assets/checkbox.png" alt="Checkbox">
+                    <span class="font-bold">23</span>
+                </div>
+                <div class="nav-btn bg-[#F4F7FF] p-2 rounded-full cursor-pointer">
+                    <img src="./assets/theme-btn.png" alt="Nav Button">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Area -->
+    <main class="w-[90%] mx-auto grid grid-cols-12 gap-4">
+        <section class="col-span-9 rounded-xl bg-base-100 p-3">
+            <div class="grid grid-cols-4 gap-3 *:rounded-xl py-4">
+                <!-- child 1 -->
+                <div class="col-span-1 flex gap-4 items-center justify-center py-4 bg-[#F4F7FF]">
+                    <div class="p-3 rounded-full bg-base-100">
+                        <img class="w-5 h-5" src="./assets/checkbox.png" alt="Checkbox">
+                    </div>
+                    <div>
+                        <p class="text-sm">Task Assigned</p>
+                        <span class="font-bold">05</span>
+                    </div>
+                </div>
+                <!-- child 2 -->
+                <div class="col-span-2 flex items-center justify-center bg-gradient-to-bl to-[#3752FD] from-[#9BA8F8] gap-3 p-3">
+                    <div>
+                        <img src="./assets/board.png" alt="Activity Board">
+                    </div>
+                    <div>
+                        <p class="text-base-100 text-lg">Discover Something New Today!</p>
+                    </div>
+                </div>
+                <!-- child 3 -->
+                <div class="col-span-1 flex gap-4 items-center justify-center py-4 bg-[#F4F7FF]">
+                    <div class="p-3 rounded-full bg-base-100">
+                        <img class="w-5 h-5" src="./assets/calender.png" alt="Calendar">
+                    </div>
+                    <div>
+                        <p class="text-sm">Wed ,</p>
+                        <span class="font-bold">Jul 28 2025</span>
+                    </div>
+                </div>
+            </div>
+            <!-- card area -->
+             <div class="cards grid grid-cols-3 gap-4 *:bg-[#F4F7FF] *:shadow-sm">
+                <!-- card item 1 -->
+                <div class="card bg-base-100">
+                    <div class="card-body">
+                        <span class="bg-base-100 badge p-4">Shop Ease</span>
+                        <h2 class="card-title">Fix Mobile Button Issue</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item 2 -->
+                <div class="card bg-base-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card item 3 -->
+                <div class="card bg-base-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <section class="col-span-3 border border-green-600">
+
+        </section>
+    </main>
+    
+    <script src="./scripts/scripts.js"></script>
+</body>
+</html>
