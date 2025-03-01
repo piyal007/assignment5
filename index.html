@@ -25,10 +25,10 @@
         
     <title>Dev Board</title>
 </head>
-<body class="bg-[#F4F7FF]">
+<body id="body" class="bg-[#F4F7FF]">
     <!-- Header Area-->
     <header class="py-3">
-        <nav class="w-[90%] mx-auto flex justify-between bg-base-100 py-3 px-4 rounded-xl shadow">
+        <nav class="w-10/12 mx-auto flex justify-between bg-base-100 py-3 px-4 rounded-xl shadow">
             <div class="logo flex gap-2 items-center bg-[#F4F7FF] hover:bg-gray-300 p-3 rounded-xl cursor-pointer">
                 <img class="w-6 h-6" src="./assets/logo.png" alt="Dev Logo">
                 <h2>Dev<span class="font-bold">Board</span></h2>
@@ -38,7 +38,7 @@
                     <img class="w-4 h-4" src="./assets/checkbox.png" alt="Checkbox">
                     <span class="font-bold">23</span>
                 </div>
-                <div class="nav-btn bg-[#F4F7FF] hover:bg-gray-300 p-3 rounded-full cursor-pointer flex items-center justify-center">
+                <div id="theme-btn" class="nav-btn bg-[#F4F7FF] hover:bg-gray-300 p-3 rounded-full cursor-pointer flex items-center justify-center">
                     <img class="w-6 h-6" src="./assets/theme-btn.png" alt="Nav Button">
                 </div>
             </div>
@@ -46,7 +46,7 @@
     </header>
 
     <!-- Main Area -->
-    <main class="w-[90%] mx-auto grid grid-cols-12 gap-4 pb-6">
+    <main class="w-10/12 mx-auto grid grid-cols-12 gap-4 pb-6">
         <section class="col-span-9 rounded-xl bg-base-100 p-3 shadow-sm">
             <div class="grid grid-cols-4 gap-3 *:rounded-xl py-3">
                 <!-- child 1 -->
@@ -85,10 +85,11 @@
                 <!-- card item 1 -->
                 <div class="card bg-base-100">
                     <div class="card-body p-4">
-                        <span class="bg-base-100 badge p-4">Shop Ease</span>
+                        <span class="bg-base-100 badge p-4">ShopEase</span>
                         <h2 class="card-title text-lg">Fix Mobile Button Issue</h2>
                         <p class="bg-base-100 p-2 rounded-md text-gray-500 text-sm">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        <div class="justify-between items-end card-actions pt-3">
+                        <div class="border border-dashed"></div>
+                        <div class="justify-between items-end card-actions">
                             <div class="deadline text-sm">
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
@@ -100,11 +101,12 @@
                 <!-- card item 2 -->
                 <div class="card bg-base-100">
                     <div class="card-body p-4">
-                        <span class="bg-base-100 badge p-4">Soft Pay</span>
-                        <h2 class="card-title text-lg">Add Pay Success Modal</h2>
+                        <span class="bg-base-100 badge p-4">CloudSync</span>
+                        <h2 class="card-title text-lg">Add Dark Mode</h2>
                         <p class="bg-base-100 p-2 rounded-md text-gray-500 text-sm">A card component has a figure, a body part, and
                             inside body there are title and actions parts</p>
-                        <div class="justify-between items-end card-actions pt-3">
+                        <div class="border border-dashed"></div>
+                        <div class="justify-between items-end card-actions">
                             <div class="deadline text-sm">
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
@@ -116,11 +118,12 @@
                 <!-- card item 3 -->
                 <div class="card bg-base-100">
                     <div class="card-body p-4">
-                        <span class="bg-base-100 badge p-4">Meta</span>
-                        <h2 class="card-title text-lg">Add new reaction 🤲</h2>
+                        <span class="bg-base-100 badge p-4">SwiftPay</span>
+                        <h2 class="card-title text-lg">Optimize Home page</h2>
                         <p class="bg-base-100 p-2 rounded-md text-gray-500 text-sm">A card component has a figure, a body part, and
                             inside body there are title and actions parts</p>
-                        <div class="justify-between items-end card-actions pt-3">
+                        <div class="border border-dashed"></div>
+                        <div class="justify-between items-end card-actions">
                             <div class="deadline text-sm">
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
@@ -132,11 +135,12 @@
                 <!-- card item 4 -->
                 <div class="card bg-base-100">
                     <div class="card-body p-4">
-                        <span class="bg-base-100 badge p-4">Programming Hero</span>
-                        <h2 class="card-title text-lg">Fix Video Loading Issue</h2>
+                        <span class="bg-base-100 badge p-4">Meta</span>
+                        <h2 class="card-title text-lg">Add new emoji 🤲</h2>
                         <p class="bg-base-100 p-2 rounded-md text-gray-500 text-sm">A card component has a figure, a body part, and
                             inside body there are title and actions parts</p>
-                        <div class="justify-between items-end card-actions pt-3">
+                        <div class="border border-dashed"></div>
+                        <div class="justify-between items-end card-actions">
                             <div class="deadline text-sm">
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
@@ -149,10 +153,11 @@
                 <div class="card bg-base-100">
                     <div class="card-body p-4">
                         <span class="bg-base-100 badge p-4">Google LLC</span>
-                        <h2 class="card-title text-lg">Integrate AI search</h2>
+                        <h2 class="card-title text-lg">Integrate OpenAI API</h2>
                         <p class="bg-base-100 p-2 rounded-md text-gray-500 text-sm">A card component has a figure, a body part, and
                             inside body there are title and actions parts</p>
-                        <div class="justify-between items-end card-actions pt-3">
+                        <div class="border border-dashed"></div>
+                        <div class="justify-between items-end card-actions">
                             <div class="deadline text-sm">
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
@@ -164,11 +169,12 @@
                 <!-- card item 6 -->
                 <div class="card bg-base-100">
                     <div class="card-body p-4">
-                        <span class="bg-base-100 badge p-4">Polygon Tech</span>
-                        <h2 class="card-title text-lg">Review Ami Probashi Site</h2>
+                        <span class="bg-base-100 badge p-4">Glassdoar</span>
+                        <h2 class="card-title text-lg">Improve Job searching</h2>
                         <p class="bg-base-100 p-2 rounded-md text-gray-500 text-sm">A card component has a figure, a body part, and
                             inside body there are title and actions parts</p>
-                        <div class="justify-between items-end card-actions pt-3">
+                        <div class="border border-dashed"></div>
+                        <div class="justify-between items-end card-actions">
                             <div class="deadline text-sm">
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
