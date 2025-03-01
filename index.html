@@ -36,7 +36,7 @@
             <div class="nav-right-items flex gap-4">
                 <div class="nav-checkbox flex gap-2 items-center bg-[#F4F7FF] hover:bg-gray-300 py-2 px-4 rounded-full cursor-pointer">
                     <img class="w-4 h-4" src="./assets/checkbox.png" alt="Checkbox">
-                    <span class="font-bold">23</span>
+                    <span id="completed-tasks" class="font-bold">23</span>
                 </div>
                 <div id="theme-btn" class="nav-btn bg-[#F4F7FF] hover:bg-gray-300 p-3 rounded-full cursor-pointer flex items-center justify-center">
                     <img class="w-6 h-6" src="./assets/theme-btn.png" alt="Nav Button">
@@ -56,7 +56,7 @@
                     </div>
                     <div>
                         <p class="text-sm">Task Assigned</p>
-                        <span class="font-bold">05</span>
+                        <span id="assigned-tasks" class="font-bold">06</span>
                     </div>
                 </div>
                 <!-- child 2 -->
@@ -73,9 +73,8 @@
                     <div class="p-3 rounded-full bg-base-100">
                         <img class="w-5 h-5" src="./assets/calender.png" alt="Calendar">
                     </div>
-                    <div>
-                        <p class="text-sm">Wed ,</p>
-                        <span class="font-bold">Jul 28 2025</span>
+                    <div id="calender">
+                        
                     </div>
                 </div>
             </div>
@@ -94,7 +93,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-sm btn-primary bg-[#3752FD]">Completed</button>
+                            <button class="btn btn-sm btn-primary bg-[#3752FD] card-btn">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -111,7 +110,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-sm btn-primary bg-[#3752FD]">Completed</button>
+                            <button class="btn btn-sm btn-primary bg-[#3752FD] card-btn">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -128,7 +127,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-sm btn-primary bg-[#3752FD]">Completed</button>
+                            <button class="btn btn-sm btn-primary bg-[#3752FD] card-btn">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -145,7 +144,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-sm btn-primary bg-[#3752FD]">Completed</button>
+                            <button class="btn btn-sm btn-primary bg-[#3752FD] card-btn">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +161,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-sm btn-primary bg-[#3752FD]">Completed</button>
+                            <button class="btn btn-sm btn-primary bg-[#3752FD] card-btn">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -179,7 +178,7 @@
                                 <p class="text-gray-500">Deadline</p>
                                 <p>21 March 2025</p>
                             </div>
-                            <button class="btn btn-sm btn-primary bg-[#3752FD]">Completed</button>
+                            <button class="btn btn-sm btn-primary bg-[#3752FD] card-btn">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -191,17 +190,12 @@
                 <h2 class="font-semibold">Activity Log</h2>
             </div>
             <div class="flex justify-center items-center py-4">
-                <button class="btn btn-sm btn-primary bg-[#3752FD]">Clear History</button>
+                <button id="clear-btn" class="btn btn-sm btn-primary bg-[#3752FD]">Clear History</button>
             </div>
             <div class="border border-dashed border-gray-300 mb-6"></div>
 
-            <div class="flex flex-col gap-2 items-center justify-center *:mx-2 *:bg-gray-100 *:rounded-md">
-                <div>
-                    <p class="p-4 text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div>
-                <div>
-                    <p class="p-4 text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-                </div>
+            <div id="activity-logs" class="flex flex-col gap-2 items-center justify-center *:mx-2 *:bg-gray-100 *:rounded-md">
+                
             </div>
         </section>
     </main>
