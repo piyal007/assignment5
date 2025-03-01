@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" href="./assets/board.png" type="image/x-icon" />
+
+    <!-- Daisy UI and tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+    <title>Blog Page</title>
+</head>
+<body class="bg-[#F4F7FF]">
+        <!-- Header Area-->
+        <header class="py-3">
+            <nav class="w-10/12 mx-auto flex justify-between bg-base-100 py-3 px-4 rounded-xl shadow">
+                <div class="logo flex gap-2 items-center bg-[#F4F7FF] hover:bg-gray-300 p-3 rounded-xl cursor-pointer">
+                    <img class="w-6 h-6" src="./assets/logo.png" alt="Dev Logo">
+                    <h2>Dev<span class="font-bold">Board</span></h2>
+                </div>
+                <div class="nav-right-items flex gap-4">
+                    <button id="backToHome" class="btn btn-primary">Back To Desk</button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="w-10/12 mx-auto py-4">
+                <h2 class="font-bold text-3xl text-center mb-6">Blogs</h2>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</div>
+                    <div class="collapse-content text-base">To select an element in the DOM, we can use `getElementById()` to select by ID, `getElementsByClassName()` to select by
+                    class name, and `getElementsByTagName()` to select by tag name. `querySelector()` selects the first matching element,
+                    and `querySelectorAll()` selects all matching elements. We can also use `parentNode` to get the parent element or
+                    `children` to get child elements. Lastly, `closest()` finds the nearest ancestor that matches a selector.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent?</div>
+                    <div class="collapse-content text-base">`innerHTML` gets or sets the HTML content of an element, including tags. `innerText` gets or sets the visible text
+                    content, respecting styles like hidden elements. `textContent` gets or sets all the text inside an element, without
+                    considering styles or hidden content, and doesn't include HTML tags.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-3: What is event delegation in the DOM?</div>
+                    <div class="collapse-content text-base">Event delegation in the DOM is a technique where we attach a single event listener to a parent element instead of
+                    attaching one to each child element. The parent listens for events on its child elements and handles them when they
+                    occur. This works because of event bubbling where the event starts at the target element and bubbles up to its parent.
+                    This method makes it easier to manage events especially when elements are added or removed dynamically.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-4: What is event bubbling in the DOM?</div>
+                    <div class="collapse-content text-base">Event bubbling in the DOM happens when an event starts at the element where it occurred and then moves up to its parent
+                    elements. For example if we click on a button inside a div the event will first happen on the button then move up to the
+                    div then to the body and finally to the document. This allows parent elements to catch events from their child elements
+                    making it easier for us to manage events.</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+                    <div class="collapse-content text-base">To create an element in JavaScript we use document.createElement('tagName') where 'tagName' can be any HTML element like
+                    div, p, or span. Once we have the new element we can add it to the page by using parentElement.appendChild(newElement).
+                    
+                    To remove an element we use parentElement.removeChild(elementToRemove) to remove it from its parent. Another way is by
+                    calling element.remove() directly on the element to remove it.</div>
+                </div>
+            </section>
+        </main>
+
+    <!-- JS Scripts -->
+    <script>
+        // Back To Home
+            const backToHome = document.getElementById("backToHome");
+            backToHome.addEventListener("click", function () {
+                window.location.href = "index.html";
+            })
+    </script>
+</body>
+</html>

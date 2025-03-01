@@ -10,6 +10,12 @@ themeBtn.addEventListener('click', function () {
     document.getElementById("body").style.backgroundColor = rgba;
 });
 
+// Go to blog.html
+const activityBoard = document.getElementById("activity-board");
+activityBoard.addEventListener("click", function () {
+    window.location.href = "blog.html";
+})
+
 // Calendar
 const now = new Date();
 const weekday = now.toLocaleDateString("en-US", { weekday: "short" });
