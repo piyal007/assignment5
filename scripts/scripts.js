@@ -6,7 +6,6 @@ themeBtn.addEventListener('click', function () {
     const blue = Math.floor(Math.random() * 256);
     const alpha = 0.2;
     const rgba = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
-    console.log(rgba);
     document.getElementById("body").style.backgroundColor = rgba;
 });
 
@@ -18,8 +17,8 @@ activityBoard.addEventListener("click", function () {
 
 // Calendar
 const now = new Date();
-const weekday = now.toLocaleDateString("en-US", { weekday: "short" });
-const month = now.toLocaleDateString("en-US", { month: "short" });
+const weekday = now.toLocaleDateString("en-US", { weekday: "long" });
+const month = now.toLocaleDateString("en-US", { month: "long" });
 const day = now.getDate();
 const year = now.getFullYear();
 const calendarElemnt = document.createElement("p");
