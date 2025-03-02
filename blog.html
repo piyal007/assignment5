@@ -42,47 +42,40 @@
         </header>
         <main>
             <section class="w-10/12 mx-auto py-4">
-                <h2 class="font-bold text-3xl text-center mb-6">Blogs</h2>
-                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</div>
-                    <div class="collapse-content text-base">To select an element in the DOM, we can use `getElementById()` to select by ID, `getElementsByClassName()` to select by
-                    class name, and `getElementsByTagName()` to select by tag name. `querySelector()` selects the first matching element,
-                    and `querySelectorAll()` selects all matching elements. We can also use `parentNode` to get the parent element or
-                    `children` to get child elements. Lastly, `closest()` finds the nearest ancestor that matches a selector.</div>
+                <h1 class="font-bold text-3xl text-center mb-6">Blogs</h1>
+                <div class="*:py-5 *:rounded-xl *:bg-white *:mb-4 *:px-10">
+                    <!-- Q-1 -->
+                    <div>
+                        <h2 class="font-semibold text-2xl text-gray-700">Question-1: What are the different ways to select an element in the DOM?</h2>
+                        <div class="border-b-2 border-dashed my-3"></div>
+                        <p class="text-base text-gray-600">DOM থেকে কোনো এলিমেন্ট সিলেক্ট করতে চাইলে "getElementById()" দিয়ে ID অনুযায়ী "getElementsByClassName()" দিয়ে class name অনুযায়ী, আর "getElementsByTagName()" দিয়ে tag name অনুযায়ী সিলেক্ট করা যায়। "querySelector()" দিয়ে প্রথম মিল থাকা এলিমেন্টটা নিয়ে আসা যায়, আর "querySelectorAll()" দিয়ে সব মিল থাকা এলিমেন্ট নিয়ে আসা যায়। কোনো এলিমেন্টের প্যারেন্ট পেতে "parentNode" আর তার চাইল্ড এলিমেন্ট পেতে "children" ইউজ করা হয়। সবশেষে, "closest()" ইউজ করে নির্দিষ্ট সিলেক্টরের সাথে মিল থাকা সবচেয়ে কাছের প্যারেন্ট খুঁজে বের করা যায়।</p>
+                    </div>
+                    <!-- Q-2 -->
+                    <div>
+                        <h2 class="font-semibold text-2xl text-gray-700">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+                        <div class="border-b-2 border-dashed my-3"></div>
+                        <p class="text-base text-gray-600">"innerHTML" দিয়ে কোনো এলিমেন্টের HTML কন্টেন্ট ট্যাগ সহ পাওয়া বা সেট করা যায়। আর "innerText" দিয়ে কোনো ট্যাগের ভিতরের টেক্সট পায় বা সেট করা যায়, আর "textContent" সম্পর্কে তেমন কিছু জানি না</p>
+                    </div>
+                    <!-- Q-3 -->
+                    <div>
+                        <h2 class="font-semibold text-2xl text-gray-700">Question-3: What is event delegation in the DOM?</h2>
+                        <div class="border-b-2 border-dashed my-3"></div>
+                        <p class="text-base text-gray-600">DOM এ Event Delegation মানে হলো প্রতিটি চাইল্ড এলিমেন্টের জন্য আলাদা ইভেন্ট লিসেনার না দিয়ে একটা parent এলিমেন্টে ইভেন্ট লিসেনার যোগ করা। যখন কোনো চাইল্ড এলিমেন্টে ইভেন্ট ট্রিগার হয় তখন সেটা parent পর্যন্ত পৌঁছে যায় event bubbling এর কারনে।</p>
+                    </div>
+                    <!-- Q-4 -->
+                    <div>
+                        <h2 class="font-semibold text-2xl text-gray-700">Question-4: What is event bubbling in the DOM?</h2>
+                        <div class="border-b-2 border-dashed my-3"></div>
+                        <p class="text-base text-gray-600">Event Bubbling মানে হলো কোনো ইভেন্ট যখন একটা এলিমেন্টে ঘটে তখন সেটা তার প্যারেন্টদের কাছে পৌঁছে যায়। যেমন যদি একটা button এর ভেতর ক্লিক করি ইভেন্টটা প্রথমে button এ হবে তারপর div এ তারপর body তে শেষে document পর্যন্ত পৌঁছাবে।</p>
+                    </div>
+                    <!-- Q-5 -->
+                    <div>
+                        <h2 class="font-semibold text-2xl text-gray-700">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                        <div class="border-b-2 border-dashed my-3"></div>
+                        <p class="text-base text-gray-600">JavaScript এ নতুন এলিমেন্ট বানাতে "document.createElement('tagName')" ব্যবহার করা হয় "tagName" যেকোনো HTML এলিমেন্ট হতে পারে যেমন div, p, span ইত্যাদি। নতুন এলিমেন্ট যোগ করতে "parentElement.appendChild(newElement)" ব্যবহার করা হয়। কোনো এলিমেন্ট রিমুভ করতে "parentElement.removeChild(elementToRemove)" ব্যবহার করা হয় অথবা সরাসরি "element.remove()" দিলেও কাজ হবে।</p>
+                    </div>
                 </div>
-                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent?</div>
-                    <div class="collapse-content text-base">`innerHTML` gets or sets the HTML content of an element, including tags. `innerText` gets or sets the visible text
-                    content, respecting styles like hidden elements. `textContent` gets or sets all the text inside an element, without
-                    considering styles or hidden content, and doesn't include HTML tags.</div>
-                </div>
-                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-3: What is event delegation in the DOM?</div>
-                    <div class="collapse-content text-base">Event delegation in the DOM is a technique where we attach a single event listener to a parent element instead of
-                    attaching one to each child element. The parent listens for events on its child elements and handles them when they
-                    occur. This works because of event bubbling where the event starts at the target element and bubbles up to its parent.
-                    This method makes it easier to manage events especially when elements are added or removed dynamically.</div>
-                </div>
-                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-4: What is event bubbling in the DOM?</div>
-                    <div class="collapse-content text-base">Event bubbling in the DOM happens when an event starts at the element where it occurred and then moves up to its parent
-                    elements. For example if we click on a button inside a div the event will first happen on the button then move up to the
-                    div then to the body and finally to the document. This allows parent elements to catch events from their child elements
-                    making it easier for us to manage events.</div>
-                </div>
-                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-                    <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title font-semibold text-xl border-b-2 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</div>
-                    <div class="collapse-content text-base">To create an element in JavaScript we use document.createElement('tagName') where 'tagName' can be any HTML element like
-                    div, p, or span. Once we have the new element we can add it to the page by using parentElement.appendChild(newElement).
-                    
-                    To remove an element we use parentElement.removeChild(elementToRemove) to remove it from its parent. Another way is by
-                    calling element.remove() directly on the element to remove it.</div>
-                </div>
+                
             </section>
         </main>
 
